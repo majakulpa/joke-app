@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%;
+  background-image: url("img/wall.jpeg");
+}
+
+header {
+  margin-bottom: 5rem;
+  height: 8rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: rgba(101, 99, 97, 0.8); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    rgba(157, 152, 152, 0.8),
+    rgba(101, 99, 97, 0.8)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    rgba(157, 152, 152, 0.8),
+    rgba(101, 99, 97, 0.8)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header > p {
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 0.5rem;
+  color: #ddd;
+  font-size: 4rem;
+  margin: 2rem auto;
+  text-shadow: 0 10px 20px #333;
+}
+
+button {
+  background-color: #eee;
+  padding: 1rem 2rem;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  box-shadow: 0 10px 20px #333;
+  border-radius: 20px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  font-weight: 700;
+  background-color: #fff;
+}
+
+button:active {
+  color: #ddd;
+}
+
+button:focus {
+  outline: none;
+}
+
+.joke-photo {
+  position: relative;
+  width: 75%;
+  margin: 3rem auto;
+}
+
+.man {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 10px 20px #333;
+}
+
+.comic {
+  position: absolute;
+  width: 43%;
+  left: 55%;
+  top: 5%;
+}
+
+.joke {
+  position: absolute;
+  text-align: center;
+  width: 35%;
+  top: 10%;
+  left: 59%;
+}
+
+.setup {
+  font-size: 2rem;
+}
+
+.punchline {
+  font-size: 1.5rem;
+}
+
+.info {
+  font-size: 2rem;
+}
+
+footer {
+  text-align: right;
+  background: rgba(101, 99, 97, 0.8);
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 3rem 1rem 2rem 1rem;
+  margin-top: 10rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  button {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .setup {
+    font-size: 1.5rem;
+  }
+
+  .punchline {
+    font-size: 1rem;
+  }
+
+  .info {
+    font-size: 1.5rem;
+  }
+  header > p {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .joke-photo {
+    width: 100%;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .setup {
+    font-size: 0.8rem;
+  }
+
+  .punchline {
+    font-size: 0.6rem;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+  header > p {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    height: 5rem;
+  }
+  button {
+    font-size: 0.8rem;
+    top: 7rem;
+  }
+  .setup {
+    font-size: 0.6rem;
+  }
+
+  .punchline {
+    font-size: 0.4rem;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+  header > p {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+  }
+}
